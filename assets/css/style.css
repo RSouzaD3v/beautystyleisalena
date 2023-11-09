@@ -1,0 +1,331 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-main: rgba(17, 6, 31, 1);
+    --font-main: 'Inter', sans-serif;
+    --padding-main: 30px 180px;
+}
+
+body{
+    background-color: var(--color-main);
+    color: white;
+    font-family: var(--font-main);
+}
+
+/* HEADER START */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--padding-main);
+}
+header .logo a img{
+    width: 100px;
+}
+header .navMenu nav ul{
+    display: flex;
+}
+header .navMenu nav ul li{
+    list-style: none;
+    margin: 0 30px;
+}
+header .navMenu nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 23px;
+}
+header .navMenu nav ul li a:hover{
+    color: rgb(175, 175, 175);
+}
+
+header .navMenuMobile{
+    overflow: hidden;
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.425);
+    width: 50vw;
+    height: 100%;
+    padding: 30px 40px;
+    backdrop-filter: blur(5px);
+    top: 0;
+    left: 0;
+    transition: 1s all;
+}
+header .navMenuMobile nav ul li{
+    margin: 70px 0;
+    list-style: none;
+}
+header .navMenuMobile nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+/* HEADER END */
+
+/* MAIN START beauty style isalena*/
+
+main .leftMain h1{
+    font-size: 85px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+main .leftMain p{
+    font-size: 41px;
+    word-spacing: 5px;
+}
+
+.container{
+    padding: 0 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .rightMain img{
+    width: 400px;
+}
+
+/* MAIN END beauty style isalena*/
+
+/* MAIN START o que oferecemos ? */
+.oferecemos{
+    margin-top: 70px;
+}
+.oferecemos, .oferecemos h1{
+    background-color: rgba(25, 8, 46, 1);
+    text-align: center;
+    font-weight: 700;
+    font-size: 50px;
+    padding: 40px 180px;
+}
+
+.service{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.service .product li, .service .work li{
+    font-weight: 400;
+    font-size: 30px;
+    text-align: left;
+    line-height: 60px;
+}
+/* MAIN END o que oferecemos ? */
+
+/* MAIN START Marcas */
+.marcas{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 250px;
+}
+.marcas img{
+    width: 150px;
+}
+
+.btnSaiba{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.btnSaiba button{
+    width: 400px;
+    height: 60px;
+    border-radius: 20px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 35px;
+    color: var(--color-main);
+    cursor: pointer;
+}
+.btnSaiba button:hover{
+    background-color: rgb(160, 159, 159);
+}
+
+/* MAIN END Marcas */
+
+/* FOOTER START */
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    background-color: black;
+    padding: 20px 0;
+}
+
+.line{
+    width: 1px;
+    height: 150px;
+    background-color: white;
+}
+
+.endereco h1, .sociais h1,.contatos h1, .horarios h1{
+    margin: 10px 0;
+}
+
+.right, .left{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+article{
+    margin-top: 200px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 30px 30px 0px 0px;
+}
+article h1{
+    color: red;
+    text-align: center;
+}
+
+.iconMenu{
+    display: none;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.active{
+    display: block !important;
+}
+
+
+@media screen and (max-width: 890px) {
+    header{
+        padding: 15px 60px;
+    }
+    header .logo a img{
+        width: 70px;
+    }
+    .navMenu{
+        display: none;
+    }
+    .iconMenu{
+        display: block;
+    }
+
+    main .leftMain h1{
+        margin-top: 20px;
+        font-size: 55px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    main .leftMain p{
+        font-size: 22px;
+        word-spacing: 5px;
+    }
+    
+    .container{
+        padding: 0 60px;
+        display: block;
+        text-align: center;
+    }
+    
+    .container .rightMain img{
+        width: 220px;
+    }
+
+    .oferecemos{
+        margin-top: 70px;
+    }
+    .oferecemos, .oferecemos h1{
+        background-color: rgba(25, 8, 46, 1);
+        text-align: center;
+        font-weight: 700;
+        font-size: 14px;
+        padding: 10px 60px;
+    }
+    
+    .service{
+        margin-top: 5px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .service .product li, .service .work li{
+        font-weight: 400;
+        font-size: 11px;
+        text-align: left;
+        line-height: 35px;
+    }
+
+
+
+    .marcas{
+        margin-top: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+    .marcas img{
+        width: 80px;
+    }
+    
+    .btnSaiba{
+        text-align: center;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    .btnSaiba button{
+        width: 290px;
+        height: 50px;
+        border-radius: 20px;
+        border: none;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 30px;
+        color: var(--color-main);
+        cursor: pointer;
+    }
+
+
+
+    footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        background-color: black;
+        padding: 20px 10px;
+    }
+    
+    .line{
+        width: 1px;
+        height: 150px;
+        background-color: white;
+    }
+    
+    .endereco h1, .sociais h1,.contatos h1, .horarios h1{
+        font-size: 10px;
+        margin: 10px 0;
+    }
+    .endereco p, .sociais p,.contatos p, .horarios p{
+        font-size: 8px;
+    }
+    
+    .right, .left{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    article{
+        margin-top: 130px;
+        background-color: white;
+        padding: 10px;
+        border-radius: 30px 30px 0px 0px;
+    }
+    article h1{
+        color: red;
+        text-align: center;
+        font-size: 15px;
+    }
+}
