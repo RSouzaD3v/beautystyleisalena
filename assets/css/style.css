@@ -106,7 +106,8 @@ main .leftMain p{
 .service{
     margin-top: 40px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 200px;
 }
 .service .product li, .service .work li{
     font-weight: 400;
@@ -225,7 +226,8 @@ article h1{
     
     .container{
         padding: 0 60px;
-        display: block;
+        display: flex;
+        flex-direction: column;  
         text-align: center;
     }
     
@@ -241,13 +243,15 @@ article h1{
         text-align: center;
         font-weight: 700;
         font-size: 14px;
-        padding: 8px 30px;
+        padding: 8px 0px;
     }
     
     .service{
         margin-top: 5px;
         display: flex;
-        justify-content: space-between;
+        flex-wrap: nowrap;
+        gap: 50px;
+        justify-content: center;
     }
     .service .product li, .service .work li{
         font-weight: 400;
@@ -328,4 +332,63 @@ article h1{
         text-align: center;
         font-size: 15px;
     }
+}
+
+@media (max-width: 915px) and (min-height: 1000px) {
+    .navMenu{
+        display: none;
+    }
+    .iconMenu{
+        display: block;
+    }
+
+    header{
+        padding: 40px 50px;
+    }
+
+    .container{
+        padding: 0 0px;
+        display: flex;
+        flex-direction: column;  
+        text-align: center;
+    }
+
+    .oferecemos, .oferecemos h1{
+        background-color: rgba(25, 8, 46, 1);
+        text-align: center;
+        font-weight: 700;
+        font-size: 50px;
+        padding: 8px 0px;
+    }
+    
+    .service{
+        margin-top: 5px;
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 60px;
+        justify-content: center;
+    }
+
+    .marcas{
+        margin-top: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 90px;
+    }
+    .marcas img{
+        width: 150px;
+    }
+
+    header .navMenuMobile nav ul li{
+        margin: 200px 0;
+        list-style: none;
+    }
+    header .navMenuMobile nav ul li a{
+        text-decoration: none;
+        color: white;
+        font-size: 40px;
+    }
+
+
 }
