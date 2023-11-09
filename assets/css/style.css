@@ -200,7 +200,7 @@ article h1{
 
 @media screen and (max-width: 890px) {
     header{
-        padding: 15px 60px;
+        padding: 15px 40px;
     }
     header .logo a img{
         width: 70px;
@@ -241,7 +241,7 @@ article h1{
         text-align: center;
         font-weight: 700;
         font-size: 14px;
-        padding: 10px 60px;
+        padding: 8px 30px;
     }
     
     .service{
@@ -253,7 +253,7 @@ article h1{
         font-weight: 400;
         font-size: 11px;
         text-align: left;
-        line-height: 35px;
+        line-height: 22px;
     }
 
 
@@ -263,10 +263,10 @@ article h1{
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 50px;
+        gap: 40px;
     }
     .marcas img{
-        width: 80px;
+        width: 60px;
     }
     
     .btnSaiba{
@@ -275,13 +275,13 @@ article h1{
         margin-bottom: 100px;
     }
     .btnSaiba button{
-        width: 290px;
-        height: 50px;
+        width: 200px;
+        height: 40px;
         border-radius: 20px;
         border: none;
         text-transform: uppercase;
         font-weight: 700;
-        font-size: 30px;
+        font-size: 20px;
         color: var(--color-main);
         cursor: pointer;
     }
