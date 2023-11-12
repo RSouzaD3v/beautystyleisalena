@@ -10,10 +10,11 @@
     --padding-main: 30px 180px;
 }
 
-body{
+body, html{
     background-color: var(--color-main);
     color: white;
     font-family: var(--font-main);
+    scroll-behavior: smooth;
 }
 
 /* HEADER START */
@@ -63,6 +64,22 @@ header .navMenuMobile nav ul li a{
     text-decoration: none;
     color: white;
     font-size: 20px;
+}
+
+#backTop{
+    display: none;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+#backTop a > i{
+    font-size: 40px;
+    color: white;
+    opacity: 0.5;
+    cursor: pointer;
+}
+#backTop i:hover{
+    opacity: 1;
 }
 /* HEADER END */
 
@@ -147,6 +164,72 @@ main .leftMain p{
 }
 .btnSaiba button:hover{
     background-color: rgb(160, 159, 159);
+    transform: skew(-20deg);
+}
+
+.clientes{
+    margin: 10px 0;
+}
+.allClientes{
+    padding: 0 40px;
+}
+.allClientes .statics{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card{
+    width: 150px;
+    height: 150px;
+    background-color: rgba(255, 255, 255, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 15px;
+}
+.card:hover{
+    background-color: black;
+    
+    animation: rotate 1.3s ease-in-out;
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }100%{
+        transform: rotate(360deg);
+    }
+}
+.card h2{
+    margin: 8px 0;
+    font-size: 18px;
+}
+.card i{
+    font-size: 40px;
+}
+
+.perguntas{
+    text-align: center;
+    background-color: rgba(25, 8, 46, 1);
+    padding: 10px;
+}
+
+.perguntas > h1{
+    padding-top: 20px;
+    font-size: 40px;
+    margin: 30px 0;
+}
+
+.perguntas details{
+    background-color: rgba(70, 22, 129, 0.477);
+    padding: 50px 0;
+    margin: 15px 0;
+    font-size: 30px;
+    border-radius: 70px;
+}
+.perguntas details p{
+    font-size: 18px;
 }
 
 /* MAIN END Marcas */
@@ -186,6 +269,15 @@ article{
 article h1{
     color: red;
     text-align: center;
+    animation: animCupom 1.5s infinite ease-in-out;
+}
+
+@keyframes animCupom {
+    0%{
+        color: red;
+    }100%{
+        color: rgb(0, 0, 0);
+    }
 }
 
 .iconMenu{
@@ -290,8 +382,49 @@ article h1{
         cursor: pointer;
     }
 
+    .allClientes{
+        padding: 0 8px;
+    }
+    .card{
+        width: 100px;
+        height: 100px;
+        background-color: rgba(255, 255, 255, 0.05);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-radius: 10px;
+    }
+    .card i{
+        font-size: 25px;
+    }
+    .card h2{
+        font-size: 15px;
+    }
 
-
+    .perguntas{
+        text-align: center;
+        background-color: rgba(25, 8, 46, 1);
+        padding: 10px;
+    }
+    
+    .perguntas > h1{
+        padding-top: 20px;
+        font-size: 35px;
+        margin: 30px 0;
+    }
+    
+    .perguntas details{
+        background-color: rgba(70, 22, 129, 0.477);
+        padding: 25px 0;
+        margin: 15px 0;
+        font-size: 19px;
+        border-radius: 70px;
+    }
+    .perguntas details p{
+        font-size: 13px;
+    }
     footer{
         display: flex;
         justify-content: center;

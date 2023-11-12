@@ -12,17 +12,17 @@
     <title>Beauty Style Isalena</title>
 </head>
 <body>
-    <header>
+    <header id="inicio">
         <section class="logo">
             <a href="#"><img src="./assets/img/logo.png" /></a>
         </section>
         <section class="navMenu">
             <nav>
                 <ul>
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Contatos</a></li>
-                    <li><a href="#">Clientes</a></li>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contatos">Contatos</a></li>
+                    <li><a href="#clientes">Clientes</a></li>
                 </ul>
             </nav>
         </section>
@@ -33,13 +33,17 @@
             <nav>
                 <ul>
                     <li><a href="#">Início</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Contatos</a></li>
-                    <li><a href="#">Clientes</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contatos">Contatos</a></li>
+                    <li><a href="#clientes">Clientes</a></li>
                 </ul>
             </nav>
         </section>
     </header>
+
+    <div id="backTop">
+        <a href="#inicio"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
 
     <main>
         <section class="container">
@@ -52,7 +56,7 @@
             </section>
         </section>
 
-        <section class="oferecemos">
+        <section class="oferecemos" id="sobre">
             <h1>O que oferecemos ?</h1>
 
             <section class="service">
@@ -81,10 +85,53 @@
         </section>
     </main>
 
+    <section class="clientes" id="clientes">
+        <section class="allClientes">
+            <section class="statics">
+                <section class="card">
+                    <i class="fa-solid fa-person"></i>
+                    <h2>Mais de 2K Clientes</h2>
+                </section>
+                <section class="card">
+                    <i class="fa-solid fa-cart-arrow-down"></i>
+                    <h2>Mais de 3K Vendas</h2>
+                </section>
+                <section class="card">
+                    <i class="fa-solid fa-dolly"></i>
+                    <h2>Mais de 1K Entregas</h2>
+                </section>
+            </section>
+        </section>
+    </section>
+
+    <section class="perguntas">
+        <h1>Perguntas Frequentes:</h1>
+        <details>
+            <summary>Fazem entrega ?</summary>
+            <p>Sim. Fazemos entrega sem taxa no município de Itaituba-Pa</p>
+        </details>
+        <details>
+            <summary>Tem parcelamento nas compras ?</summary>
+            <p>Sim. Parcelamos até 3 vezes sem juros! (Cartão de Crédito)</p>
+        </details>
+        <details>
+            <summary>Aceita Pix ?</summary>
+            <p>Sim!</p>
+        </details>
+        <details>
+            <summary>Parcelam no boleto ?</summary>
+            <p>Em breve teremos essa opção!</p>
+        </details>
+        <details>
+            <summary>Fazem entrega ?</summary>
+            <p>Sim. Fazemos entrega sem taxa no município de Itaituba-Pa</p>
+        </details>
+    </section>
+
     <article>
         <h1>CUPOM DE DESCONTO: 10PORCENTO%</h1>
     </article>
-    <footer>
+    <footer id="contatos">
         <section class="left">
             <section class="endereco">
                 <h1>Endereço</h1>
