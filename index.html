@@ -11,8 +11,8 @@
     <script src="https://kit.fontawesome.com/ad98922715.js" crossorigin="anonymous"></script>
     <title>Beauty Style Isalena</title>
 </head>
-<body>
-    <header id="inicio">
+<body id="inicio">
+    <header>
         <section class="logo">
             <a href="#"><img src="./assets/img/logo.png" /></a>
         </section>
@@ -21,8 +21,7 @@
                 <ul>
                     <li><a href="#inicio">Início</a></li>
                     <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#contatos">Contatos</a></li>
-                    <li><a href="#clientes">Clientes</a></li>
+                    <li><a id="btnContatos" href="#contatos">Contatos</a></li>
                 </ul>
             </nav>
         </section>
@@ -32,18 +31,15 @@
         <section class="navMenuMobile">
             <nav>
                 <ul>
-                    <li><a href="#">Início</a></li>
+                    <li><a href="#inicio">Início</a></li>
                     <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#contatos">Contatos</a></li>
-                    <li><a href="#clientes">Clientes</a></li>
                 </ul>
             </nav>
         </section>
     </header>
 
-    <div id="backTop">
-        <a href="#inicio"><i class="fa-solid fa-arrow-up"></i></a>
-    </div>
+
 
     <main>
         <section class="container">
@@ -85,24 +81,6 @@
         </section>
     </main>
 
-    <section class="clientes" id="clientes">
-        <section class="allClientes">
-            <section class="statics">
-                <section class="card">
-                    <i class="fa-solid fa-person"></i>
-                    <h2>Mais de 2K Clientes</h2>
-                </section>
-                <section class="card">
-                    <i class="fa-solid fa-cart-arrow-down"></i>
-                    <h2>Mais de 3K Vendas</h2>
-                </section>
-                <section class="card">
-                    <i class="fa-solid fa-dolly"></i>
-                    <h2>Mais de 1K Entregas</h2>
-                </section>
-            </section>
-        </section>
-    </section>
 
     <section class="perguntas">
         <h1>Perguntas Frequentes:</h1>
@@ -131,6 +109,10 @@
     <article>
         <h1>CUPOM DE DESCONTO: 10PORCENTO%</h1>
     </article>
+
+    <div id="backTop">
+        <a href="#inicio"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
     <footer id="contatos">
         <section class="left">
             <section class="endereco">
@@ -161,5 +143,5 @@
         </section>
     </footer>
 </body>
-<script src="./assets/js/main.js"></script>
+<script defer src="./assets/js/main.js"></script>
 </html>
