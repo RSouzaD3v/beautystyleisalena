@@ -82,3 +82,10 @@ export async function POST(req: Request) {
 
   return new Response('', { status: 200 })
 }
+
+export async function GET(req: Request, res: Response) {
+  return NextResponse.json({
+    api: true,
+    message: "Está funcionando."
+  })
+};
