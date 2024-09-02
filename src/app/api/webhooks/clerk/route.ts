@@ -74,7 +74,7 @@ export async function POST(req: Request) {
         })
     }
 
-    return NextResponse.json({message: "New user created", newUser});
+    return NextResponse.json({message: "New user created", user: newUser});
   }
 
   console.log(`Webhook with and ID of ${id} and type of ${eventType}`)
