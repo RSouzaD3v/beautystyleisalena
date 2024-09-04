@@ -28,6 +28,7 @@ const Header = () => {
 
             <div className='flex gap-[20px] items-center'>
                 <div>
+                    
                     <Link className='flex flex-col justify-center items-center' href={"/cart"}>
                         <ShoppingCart />
                         <h1>Carrinho</h1>
